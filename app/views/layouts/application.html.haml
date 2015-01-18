@@ -38,9 +38,9 @@
         %a.navbar-brand{:href => "#"} Gmap
         .navbar-collapse.collapse.navbar-responsive-collapse
           %ul.nav.navbar-nav
-            %li= link_to "マップ", root_path
-            %li= link_to "投稿一覧", posts_path
-            %li= link_to "新規投稿", new_post_path
+            %li= link_to fa_icon('map-marker', text: 'マップ'), root_path
+            %li= link_to fa_icon('list', text: '投稿一覧'), posts_path
+            %li= link_to fa_icon('edit', text: '新規投稿'), new_post_path
     .container
       .row
         .col-lg-9
@@ -50,9 +50,9 @@
           .well.sidebar-nav
             %h3 Sidebar
             %ul.nav.nav-list
-              %li= link_to "マップ", root_path
-              %li= link_to "投稿一覧", posts_path
-              %li= link_to "新規投稿", new_post_path
+              %li= link_to fa_icon('map-marker', text: 'マップ'), root_path
+              %li= link_to fa_icon('list', text: '投稿一覧'), posts_path
+              %li= link_to fa_icon('edit', text: '新規投稿'), new_post_path
           / /.well
         / /span
       / /row
