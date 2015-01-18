@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 source 'https://rails-assets.org'
 
 gem 'rails', '4.2.0.rc2'
-gem 'sqlite3'
 gem 'sass-rails', '~> 4.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails'
@@ -23,6 +22,7 @@ gem 'unicorn'
 gem 'rails-assets-lodash'
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
@@ -39,4 +39,9 @@ group :development do
   gem 'binding_of_caller'
   gem 'pry-byebug'
   gem "bullet"
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
